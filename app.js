@@ -29,7 +29,7 @@ app.get("/send", (req, res) => {
         to: "amilton@cota.com.br",
         replayTo: user,
 
-        subject: "envio html",
+        subject: "envio html com anexo pdf",
 
         // text: "Conteúdo da mensagem de email"
 
@@ -38,7 +38,11 @@ app.get("/send", (req, res) => {
         //     <h1>teste html</h1>
         // </body>`
 
-        html : { path: 'pagina.html' }
+        html : { path: 'pagina.html' },
+        attachments: [{
+            filename: 'boleto.pdf',
+            path: 'boleto.pdf'
+          }]
     }
 
     transport.sendMail(mensagem)
