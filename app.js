@@ -26,7 +26,7 @@ app.get("/send", (req, res) => {
 
     const mensagem = {
         from: user,
-        to: "amilton@cota.com.br",
+        to: "amilton@xxxxx.com.br",
         replayTo: user,
 
         subject: "envio html com anexo pdf",
