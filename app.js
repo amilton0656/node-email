@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer')
 
 const app = express()
 
-const user = "amilton@cotaadm.com.br"
-const pass = "#Amilton313131"
+const user = "xxxxxx@xxxxx.com.br"
+const pass = "xxxxxxx"
 
 app.get("/", (req, res) => res.send('Hello world!'))
 
