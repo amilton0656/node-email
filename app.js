@@ -11,8 +11,8 @@ app.get("/", (req, res) => res.send('Hello world!'))
 app.get("/send", (req, res) => {
 
     const transport = nodemailer.createTransport({
-        host: "smtp.cotaadm.com.br",
-        service: "smtp.cotaadm.com.br",
+        host: "smtp.xxxxx.com.br",
+        service: "smtp.xxxxx.com.br",
         port: 587,
         auth: {
             user: user, 
